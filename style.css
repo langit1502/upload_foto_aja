@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+p1 {
+  color: black;
+}
+
+p2 {
+  color: white;
+}
+
+b {
+    color: yellow;
+}
+
+b2 {
+  color: gray;
+}
+
+pre {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #00ff00; /* Warna teks kode */
+}
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    animation: typing 5s steps(40) infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@media only screen and (max-width: 600px) {
+    pre {
+        font-size: 12px;
+    }
+    
+    body {
+        margin: 10px;
+        overflow: auto; /* Mengubah overflow menjadi auto agar dapat di-scroll */
+    }
+}
